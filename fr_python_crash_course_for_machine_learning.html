@@ -1,13 +1,14 @@
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Comment-obtenir-de-l'aide-?">Comment obtenir de l'aide ?<a class="anchor-link" href="#Comment-obtenir-de-l'aide-?">&#182;</a></h2><p>Il est impossible de couvrir l&#39;intégralité de python dans ce court cours, et il y a beaucoup de sujets qui ne seront pas abordés. Par exemple, nous vous expliquerons ce qu&#39;est une liste, mais ne vous expliquerons pas comment trier une liste.</p>
-<p>Et, au bout de quelques jours, vous aurez probablement oublié certains concepts ou commandes spécifiques expliqués ici.
-C&#39;est tout à fait normal, et ce n&#39;est pas un problème. Ne vous inquiétez pas pour ça !</p>
-<p>Mais il est essentiel que vous sachiez comment trouver plus d&#39;informations sur python lorsque vous en avez besoin.</p>
-<p>La communauté python est extrêmement vaste, la source d&#39;information la plus rapide est donc Google. Si vous tapez simplement <strong>python doc sort list</strong> sur Google, vous obtiendrez votre réponse en quelques secondes.</p>
-<p>De manière générale, la <a href="https://docs.python.org/3.8/">documentation python</a> est extrêmement bonne, alors assurez-vous de l&#39;utiliser.</p>
-<p>Et si vous voulez aller plus loin après ce cours accéléré, vous pouvez commencer par le [tutoriel python] (<a href="https://docs.python.org/3.8/tutorial/index.html">https://docs.python.org/3.8/tutorial/index.html</a>). Cela vous prendra un jour ou deux, mais cela en vaut vraiment la peine.</p>
+<h2 id="Comment-obtenir-de-l'aide-?">Comment obtenir de l'aide ?<a class="anchor-link" href="#Comment-obtenir-de-l'aide-?">&#182;</a></h2><p>Il est impossible de couvrir l'intégralité de python dans cette courte introduction, et beaucoup de sujets ne seront donc pas abordés.</p>
+<p>Par exemple, nous vous expliquerons ce qu'est une liste, mais ne vous expliquerons pas comment la trier.</p>
+<p>Et, au bout de quelques jours, vous aurez probablement oublié certains des concepts ou commandes spécifiques expliqués ici.</p>
+<p>C'est tout à fait normal, et ce n'est pas un problème. Ne vous inquiétez pas pour ça !</p>
+<p>Mais il est essentiel que vous sachiez comment trouver plus d'informations sur python lorsque vous en avez besoin.</p>
+<p>La communauté python est extrêmement vaste, et la meilleure source d'information est donc Google. Si vous tapez simplement <strong>python doc sort list</strong> sur Google, vous obtiendrez votre réponse en quelques secondes.</p>
+<p>De manière générale, la <a href="https://docs.python.org/fr/3.8/">documentation python</a> est très bonne, alors assurez-vous de l'utiliser.</p>
+<p>Et si vous voulez aller plus loin après ce cours accéléré, vous pouvez commencer par le <a href="https://docs.python.org/fr/3.8/tutorial/index.html">tutoriel python</a>. Vous y passerez un jour ou deux, mais cela en vaut vraiment la peine.</p>
 
 </div>
 </div>
@@ -16,15 +17,16 @@ C&#39;est tout à fait normal, et ce n&#39;est pas un problème. Ne vous inquié
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Variables-et-objets">Variables et objets<a class="anchor-link" href="#Variables-et-objets">&#182;</a></h2><p>Vous avez probablement entendu parler de la programmation orientée objet, et cela peut vous sembler compliqué.</p>
-<p>Ne vous inquiétez pas, nous n&#39;allons pas faire de programmation orientée objet dans ce cours. Mais nous utiliserons des objets tout le temps, car en python, tout est objet. Un entier, une chaîne, une liste de valeurs et même une fonction : toutes ces choses sont des objets.</p>
-<p>Commençons par regarder un entier. Avec la fonction intégrée <code>id</code>, nous pouvons obtenir l&#39;identifiant unique associé à cet objet entier :</p>
+<p>Ne vous inquiétez pas, nous n'allons pas en faire dans ce cours.</p>
+<p>Mais nous passerons notre temps à utiliser des objets, car en python, tout est un objet. Un entier, une chaîne, une liste de valeurs et même une fonction : toutes ces choses sont des objets.</p>
+<p>Commençons par regarder un entier. Avec la fonction intégrée <code>id</code>, nous pouvons obtenir l'identifiant unique associé à cet objet entier :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">id</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
@@ -40,13 +42,13 @@ C&#39;est tout à fait normal, et ce n&#39;est pas un problème. Ne vous inquié
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+    <div class="prompt output_prompt">Out[1]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>10914496</pre>
+<pre>94719625988608</pre>
 </div>
 
 </div>
@@ -58,14 +60,14 @@ C&#39;est tout à fait normal, et ce n&#39;est pas un problème. Ne vous inquié
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Et avec la fonction <code>type</code>, nous pouvons obtenir le type de l&#39;objet :</p>
+<p>Et avec la fonction <code>type</code>, nous pouvons obtenir le type de l'objet :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
@@ -81,7 +83,7 @@ C&#39;est tout à fait normal, et ce n&#39;est pas un problème. Ne vous inquié
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+    <div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -106,7 +108,7 @@ C&#39;est tout à fait normal, et ce n&#39;est pas un problème. Ne vous inquié
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
@@ -139,14 +141,14 @@ C&#39;est tout à fait normal, et ce n&#39;est pas un problème. Ne vous inquié
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Dans le cahier, comme nous l&#39;avons fait auparavant, appeler print n&#39;est pas toujours nécessaire pour imprimer la valeur d&#39;un objet. A la fin d&#39;une cellule, il suffit d&#39;évaluer l&#39;objet comme ceci :</p>
+<p>Dans un notebook jupyter, comme nous l'avons fait ci-dessus, appeler print n'est pas toujours nécessaire pour imprimer la valeur d'un objet. A la fin d'une cellule, il suffit d'évaluer l'objet comme ceci :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
@@ -164,7 +166,7 @@ C&#39;est tout à fait normal, et ce n&#39;est pas un problème. Ne vous inquié
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -182,16 +184,16 @@ C&#39;est tout à fait normal, et ce n&#39;est pas un problème. Ne vous inquié
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Mais dans un script python, ou si vous n&#39;êtes pas à la fin d&#39;une cellule du cahier, vous devrez utiliser <code>print</code>.</p>
-<p>Vous avez peut-être remarqué une grande différence par rapport aux autres langages, lorsque nous avons défini la variable « a » : nous n&#39;avons pas eu à déclarer le type de la variable. En C++, par exemple, vous feriez <code>int a = 1;</code></p>
-<p>En python, le type d&#39;une variable se déduit du type de l&#39;objet qui lui est affecté, ici un entier. Donc <code>a</code> est de type <code>int</code> :</p>
+<p>Mais dans un script python, ou si vous n'êtes pas à la fin d'une cellule du notebook, vous devrez utiliser <code>print</code>.</p>
+<p>Vous avez peut-être remarqué une grande différence par rapport aux autres langages, lorsque nous avons défini la variable « a » : nous n'avons pas eu à déclarer le type de la variable. En C++, par exemple, on taperait <code>int a = 1;</code></p>
+<p>En python, le type d'une variable se déduit du type de l'objet qui lui est affecté, ici un entier. Donc <code>a</code> est de type <code>int</code> :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
@@ -207,7 +209,7 @@ C&#39;est tout à fait normal, et ce n&#39;est pas un problème. Ne vous inquié
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -225,14 +227,14 @@ C&#39;est tout à fait normal, et ce n&#39;est pas un problème. Ne vous inquié
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Vérifions maintenant l&#39;identifiant unique d&#39;un :</p>
+<p>Vérifions maintenant l'identifiant unique de <code>a</code> :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">id</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
@@ -248,13 +250,13 @@ C&#39;est tout à fait normal, et ce n&#39;est pas un problème. Ne vous inquié
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>10914496</pre>
+<pre>94719625988608</pre>
 </div>
 
 </div>
@@ -266,9 +268,9 @@ C&#39;est tout à fait normal, et ce n&#39;est pas un problème. Ne vous inquié
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>C&#39;est l&#39;identifiant de 1 ! Et c&#39;est parce que <code>a</code> et <code>1</code> correspondent exactement au même objet en mémoire.</p>
+<p>C'est l'identifiant de 1 ! Et c'est parce que <code>a</code> et <code>1</code> correspondent exactement au même objet en mémoire.</p>
 <hr>
-<p><em>Exercer:</em></p>
+<p><em>Exercice:</em></p>
 <p>Considérez ce code :</p>
 
 <pre><code>b = 1
@@ -304,8 +306,9 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Important:</strong></p>
-<p>En python, les variables sont appelées &quot;noms&quot;. Et le processus d&#39;attribution d&#39;une valeur à une variable est appelé « liaison de nom ». En d&#39;autres termes, vous pouvez voir une variable comme une étiquette attachée à un objet.</p>
-<p>Lorsque nous faisons <code>a=1</code>, nous attachons l&#39;étiquette <code>a</code> à l&#39;entier <code>1</code>. Si vous attachez une autre étiquette à « 1 », le même objet porte maintenant deux étiquettes. Lorsque nous procédons comme suit, nous déplaçons simplement l&#39;étiquette « a » de « 1 » à « 2 » :</p>
+<p>En python, les variables sont appelées "noms" ("names").</p>
+<p>Et le processus d'attribution d'une valeur à une variable est appelé « liaison de nom » ("name binding"). En d'autres termes, vous pouvez voir une variable comme une étiquette attachée à un objet.</p>
+<p>Lorsque nous faisons <code>a=1</code>, nous attachons l'étiquette <code>a</code> à l'entier <code>1</code>. Si vous attachez une autre étiquette à <code>1</code>, le même objet porte maintenant deux étiquettes. Lorsque nous procédons comme suit, nous déplaçons simplement l'étiquette <code>a</code> de <code>1</code> à <code>2</code> :</p>
 
 </div>
 </div>
@@ -327,7 +330,7 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Cela peut sembler évident, mais n&#39;oubliez pas ceci, car cela peut conduire à de nombreux malentendus, comme nous le verrons plus tard, dans la section sur les boucles.</strong></p>
+<p><strong>Même si ça semble évident, ne l'oubliez pas, car cela peut conduire à de nombreux malentendus, comme nous le verrons plus tard, dans la section sur les boucles.</strong></p>
 
 </div>
 </div>
@@ -335,14 +338,14 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Conditions">Conditions<a class="anchor-link" href="#Conditions">&#182;</a></h2><p>Très souvent, vous devrez prendre des décisions dans vos programmes, en fonction de la situation actuelle. Voici un exemple. Exécutez la cellule suivante en la sélectionnant et en appuyant sur Maj+Entrée.</p>
+<h2 id="Conditions">Conditions<a class="anchor-link" href="#Conditions">&#182;</a></h2><p>Très souvent, vous devrez prendre des décisions dans vos programmes, en fonction de la situation. Voici un exemple.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">do_great_the_world</span> <span class="o">=</span> <span class="kc">True</span>
@@ -378,7 +381,7 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Transformez maintenant <code>do_great_the_world</code> en <code>False</code> et réexécutez la cellule. Ça y est, vous savez faire l&#39;exécution conditionnelle.</p>
+<p>Transformez maintenant <code>do_great_the_world</code> en <code>False</code> et réexécutez la cellule. Ça y est, vous savez faire de l'exécution conditionnelle.</p>
 
 </div>
 </div>
@@ -386,12 +389,13 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="%C3%80-propos-de-l'indentation-du-code">&#192; propos de l'indentation du code<a class="anchor-link" href="#%C3%80-propos-de-l'indentation-du-code">&#182;</a></h2><p>En python, les indentations sont importantes, et ne sont pas seulement là pour rendre le code lisible et joli. Lorsque vous indentez le code (utilisez simplement la tabulation pour cela), vous spécifiez que vous créez un contexte imbriqué. Par exemple, dans le code ci-dessus, la ligne <code>print(&amp;#39;hello_world&amp;#39;)</code> est &quot;sous&quot; la condition if et ne sera exécutée que si <code>do_great_the_world</code> est vrai.</p>
-<p>Dans la plupart des autres langages, cependant, les contextes sont entourés de séparateurs, comme &#39;{}&#39; en C++. Les personnes venant de ces autres langues n&#39;aiment souvent pas être obligées de mettre en retrait. Mais si vous vous lancez dans python, vous vous rendrez compte que :</p>
+<h2 id="%C3%80-propos-de-l'indentation-du-code">&#192; propos de l'indentation du code<a class="anchor-link" href="#%C3%80-propos-de-l'indentation-du-code">&#182;</a></h2><p>En python, les indentations sont importantes, et ne sont pas seulement là pour rendre le code lisible et joli. Lorsque vous indentez le code (utilisez simplement la tabulation pour cela), vous spécifiez que vous créez un contexte imbriqué. Par exemple, dans le code ci-dessus, la ligne <code>print('hello_world')</code> est &quot;sous&quot; la condition if et ne sera exécutée que si <code>do_great_the_world</code> est vrai.</p>
+<p>Dans la plupart des autres langages, cependant, les contextes sont entourés de séparateurs, comme '{}' en C++. Les personnes venant de ces autres langages n'aiment souvent pas être obligées de mettre en retrait.</p>
+<p>Mais si vous vous lancez dans python, vous vous rendrez compte que :</p>
 <ul>
-<li>aucun séparateur signifie une saisie plus rapide et plus facile</li>
-<li>si les gens n&#39;indentent pas, le code ne fonctionnera pas, vous n&#39;aurez donc plus à perdre de temps à essayer de revoir le code non indenté d&#39;autres personnes.</li>
-<li>Les éditeurs de texte et en particulier les IDE rendent très facile et naturel l&#39;indentation correcte : souvent, l&#39;éditeur indentera automatiquement, et sinon il vous suffit d&#39;appuyer sur la tabulation (ou sur shift+tab pour revenir en arrière).</li>
+<li>ne mettre aucun séparateur permet une saisie plus rapide et plus facile</li>
+<li>si les gens n'indentent pas, le code ne fonctionnera pas, vous n'aurez donc plus à perdre de temps à essayer de comprendre le code non indenté d'autres personnes.</li>
+<li>Les éditeurs de texte et en particulier les IDE rendent très facile et naturel l'indentation : souvent, l'éditeur indentera automatiquement, et sinon il vous suffit d'appuyer sur la tabulation (ou sur shift+tab pour revenir en arrière) pour indenter le bloc de texte sélectionné. </li>
 </ul>
 
 </div>
@@ -400,15 +404,15 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Boucles">Boucles<a class="anchor-link" href="#Boucles">&#182;</a></h2><p>Les boucles permettent de répéter plusieurs fois une opération. C&#39;est généralement à cela que servent les programmes, nous devons donc apprendre à le faire.</p>
-<p>Tout d&#39;abord, nous devons définir quelque chose sur lequel nous pouvons boucler. Et les choses qui peuvent être bouclées sont appelées <em>iterables</em>. Une <em>liste</em> est un itérable, et en voici un :</p>
+<h2 id="Boucles">Boucles<a class="anchor-link" href="#Boucles">&#182;</a></h2><p>Les boucles permettent de répéter plusieurs fois une opération. C'est généralement à cela que servent les programmes, nous devons donc apprendre à le faire.</p>
+<p>Tout d'abord, nous devons définir quelque chose sur lequel nous pouvons boucler, c'est à dire un <em>itérable</em>. Une <em>liste</em> est un itérable, et en voici une :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
@@ -441,15 +445,15 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Notez comment la fonction d&#39;impression s&#39;adapte à l&#39;objet imprimé. Vous pouvez l&#39;essayer sur n&#39;importe quel type d&#39;objet, et vous obtiendrez généralement des résultats significatifs.</p>
-<p>Maintenant, écrivons une boucle pour calculer les carrés de toutes les valeurs de la liste, et pour résumer ces carrés :</p>
+<p>Notez comme la fonction d'impression s'adapte à l'objet imprimé. Vous pouvez l'essayer sur n'importe quel type d'objet, et vous obtiendrez généralement un bon résultat.</p>
+<p>Maintenant, écrivons une boucle pour calculer les carrés de toutes les valeurs de la liste, et pour sommer ces carrés :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">squares</span> <span class="o">=</span> <span class="p">[]</span>
@@ -490,14 +494,14 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Ce que vous savez à ce stade sur les boucles est probablement suffisant dans la plupart des programmes, mais nous allons jeter un œil à quelques raccourcis syntaxiques.</p>
-<p>Vous pouvez boucler de manière très compacte en utilisant <em>list comprehensions</em> :</p>
+<p>Vous pouvez boucler de manière très compacte en utilisant les compréhensions de listes :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">squares</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">a</span><span class="p">]</span>
@@ -514,7 +518,7 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -532,7 +536,7 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Cela peut être pratique, et vous rencontrerez très souvent ce genre de constructions. Mais n&#39;en abusez pas. Les débutants ont souvent tendance à utiliser plusieurs compréhensions de liste pour calculer différentes valeurs à partir du même itérable, par exemple :</p>
+<p>Cela peut être pratique, et vous rencontrerez très souvent ce genre de constructions. Mais n'en abusez pas. Les débutants ont souvent tendance à utiliser plusieurs compréhensions de liste pour calculer différentes valeurs à partir du même itérable, par exemple :</p>
 
 </div>
 </div>
@@ -575,7 +579,7 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Mais ce n&#39;est ni élégant ni efficace. Si vous devez calculer plusieurs choses à partir du même itérable, utilisez une construction de boucle standard pour économiser du temps CPU et ressembler à un pro.</strong></p>
+<p><strong>Mais ce n'est ni élégant ni efficace. Si vous devez calculer plusieurs choses à partir du même itérable, utilisez une construction de boucle standard pour économiser du temps CPU et faire plus pro.</strong></p>
 
 </div>
 </div>
@@ -583,14 +587,14 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Souvent, vous devez obtenir les valeurs de l&#39;itérable, ainsi que l&#39;index auquel la valeur est stockée. Pour cela, utilisez « énumérer » :</p>
+<p>Souvent, vous devez obtenir les valeurs de l'itérable, ainsi que l'index auquel la valeur est stockée. Pour cela, utilisez <code>enumerate</code> :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">a</span><span class="p">):</span> 
@@ -627,15 +631,15 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<p><strong>Exercer</strong></p>
-<p>Revenons à la liaison de noms dans le contexte des boucles. Dans le code ci-dessous, on boucle sur une liste, et on essaie d&#39;ajouter 1 à tous les éléments de la liste, mais ça ne marche pas... tu comprends pourquoi ?</p>
+<p><strong>Exercice</strong></p>
+<p>Revenons à la liaison de noms dans le contexte des boucles. Dans le code ci-dessous, on boucle sur une liste, et on essaie d'ajouter 1 à tous les éléments de la liste, mais ça ne marche pas... comprenez-vous pourquoi ?</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lst</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
@@ -680,7 +684,8 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Entr%C3%A9e-et-sortie-de-base">Entr&#233;e et sortie de base<a class="anchor-link" href="#Entr%C3%A9e-et-sortie-de-base">&#182;</a></h2><p>Pour la science des données, et surtout si les données commencent à devenir volumineuses, nous utiliserons des bibliothèques spécifiques pour lire les fichiers de données, et vous le verrez plus tard lorsque vous commencerez à utiliser des bibliothèques de science des données telles que <code>numpy</code> ou <code>pandas</code>.</p>
+<h2 id="Entr%C3%A9e-et-sortie-de-base">Entr&#233;e et sortie de base<a class="anchor-link" href="#Entr%C3%A9e-et-sortie-de-base">&#182;</a></h2><p>Pour la science des données, et surtout si les données commencent à devenir volumineuses, nous utiliserons des bibliothèques spécifiques pour lire les fichiers de données.</p>
+<p>Vous verrez ça plus tard lorsque vous commencerez à utiliser des bibliothèques de science des données telles que <code>numpy</code> ou <code>pandas</code>.</p>
 <p>Ici, vous apprendrez simplement à lire et à écrire des fichiers texte de base.</p>
 <p>Écrivez dans un fichier texte en faisant :</p>
 
@@ -689,7 +694,7 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
@@ -713,14 +718,14 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Vous pouvez vérifier le contenu du fichier avec une fonction shell (le <code>!</code> informe le notebook jupyter qu&#39;il s&#39;agit d&#39;une fonction shell) :</p>
+<p>Vous pouvez vérifier le contenu du fichier avec une fonction shell (le <code>!</code> informe le notebook jupyter qu'il s'agit d'une fonction shell) :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span> cat myfile.txt
@@ -762,7 +767,7 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span> <span class="k">as</span> <span class="n">in_file</span><span class="p">:</span> 
@@ -801,9 +806,9 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Dans le cas de l&#39;écriture et de la lecture, nous avons utilisé l&#39;instruction « with ». Cette instruction garantit que le fichier n&#39;est actif que dans le contexte de <code>with</code>. Lorsque le programme sort du contexte, le fichier se ferme automatiquement.</p>
-<p>Il est important de s&#39;assurer que les fichiers sont fermés lorsqu&#39;ils ne sont plus nécessaires, donc :</p>
-<p><strong>Toujours utiliser l&#39;instruction with pour ouvrir les fichiers !</strong></p>
+<p>Dans le cas de l'écriture et de la lecture, nous avons utilisé l'instruction <code>with</code>. Cette instruction garantit que le fichier n'est actif que dans le contexte de <code>with</code>. Lorsque le programme sort du contexte, le fichier se ferme automatiquement.</p>
+<p>Il est important de s'assurer que les fichiers sont fermés lorsqu'ils ne sont plus nécessaires, donc :</p>
+<p><strong>Toujours utiliser l'instruction with pour ouvrir les fichiers !</strong></p>
 
 </div>
 </div>
@@ -811,14 +816,14 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Les-fonctions">Les fonctions<a class="anchor-link" href="#Les-fonctions">&#182;</a></h2><p>Voici une fonction basique, qui ne prend aucun argument (elle n&#39;a pas de paramètres) :</p>
+<h2 id="Les-fonctions">Les fonctions<a class="anchor-link" href="#Les-fonctions">&#182;</a></h2><p>Voici une fonction basique, qui ne prend aucun argument (elle n'a pas de paramètres) :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">say_hello</span><span class="p">():</span>
@@ -860,11 +865,11 @@ Vérifiez votre hypothèse dans la cellule ci-dessous :</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">somebody</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">somebody</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;hello </span><span class="si">{</span><span class="n">somebody</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
     
 <span class="n">say_hello</span><span class="p">(</span><span class="s1">&#39;world&#39;</span><span class="p">)</span>
 <span class="n">say_hello</span><span class="p">(</span><span class="s1">&#39;colin&#39;</span><span class="p">)</span>
@@ -897,19 +902,19 @@ hello colin
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Vous pouvez ajouter n&#39;importe quel paramètre dont vous avez besoin, en les séparant par des virgules :</p>
+<p>Vous pouvez ajouter n'importe quel paramètre dont vous avez besoin, en les séparant par des virgules :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span> 
-    <span class="n">all_people</span> <span class="o">=</span> <span class="s1">&#39; and &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">])</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">all_people</span><span class="p">))</span>
+    <span class="n">all_people</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1"> and </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s1">&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;hello </span><span class="si">{</span><span class="n">all_people</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
     
 <span class="n">say_hello</span><span class="p">(</span><span class="s1">&#39;asterix&#39;</span><span class="p">,</span> <span class="s1">&#39;obelix&#39;</span><span class="p">)</span>
 </pre></div>
@@ -940,14 +945,14 @@ hello colin
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Les fonctions peuvent également renvoyer des objets. Souvent un seul objet (peut-être une liste) ou un tuple d&#39;objets. Pour ce faire, utilisez l&#39;instruction return :</p>
+<p>Les fonctions peuvent également renvoyer des objets. Souvent un seul objet (peut-être une liste) ou un tuple d'objets. Pour ce faire, utilisez l'instruction return :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -966,7 +971,7 @@ hello colin
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -983,7 +988,7 @@ hello colin
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
@@ -1004,13 +1009,13 @@ hello colin
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(0.5916910005762294, 0.9463409680654058)</pre>
+<pre>(0.7366457555082949, 0.6557379764330106)</pre>
 </div>
 
 </div>
@@ -1029,7 +1034,7 @@ hello colin
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="s1">&#39;world&#39;</span><span class="p">):</span>
@@ -1066,14 +1071,14 @@ hello world
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Enfin, les fonctions peuvent soit prendre des arguments de position sans nom, soit des arguments de mot-clé. Les arguments nommés doivent être fournis après tous les arguments positionnels. Par example:</p>
+<p>Enfin, les fonctions peuvent soit prendre des arguments positionnels soit des arguments par mots-clefs. Les arguments par mots-clefs doivent être fournis après tous les arguments positionnels. Par example:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">greeting</span><span class="p">,</span> <span class="n">person</span><span class="o">=</span><span class="s1">&#39;laurel&#39;</span><span class="p">,</span> <span class="n">another_person</span><span class="o">=</span><span class="s1">&#39;hardy&#39;</span><span class="p">):</span>
@@ -1113,7 +1118,13 @@ hello world
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Dans cet exemple, <code>hi</code> est un argument positionnel et person est un argument mot-clé. Bien entendu, les arguments positionnels sont à donner dans le bon ordre ! Les arguments de mots-clés sont intéressants car ils rendent évident de l&#39;extérieur de la fonction à quoi sert l&#39;argument. Ils permettent également de spécifier uniquement certains des arguments qui ont une valeur par défaut.</p>
+<p>Dans cet exemple, <code>hi</code> est un argument positionnel et <code>person</code> est un argument par mot-clef.</p>
+<p>Bien entendu, les arguments positionnels sont à donner dans le bon ordre !</p>
+<p>Les arguments par mots-clés sont intéressants car</p>
+<ul>
+<li>ils permettent de spécifier uniquement certains des arguments qui ont une valeur par défaut.</li>
+<li>ils sont plus explicites : de l'extérieur de la fonction, on comprend à quoi sert l'argument ;  </li>
+</ul>
 
 </div>
 </div>
@@ -1121,7 +1132,7 @@ hello world
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Structures-de-donn%C3%A9es-Python">Structures de donn&#233;es Python<a class="anchor-link" href="#Structures-de-donn%C3%A9es-Python">&#182;</a></h2>
+<h2 id="Structures-de-donn%C3%A9es-python">Structures de donn&#233;es python<a class="anchor-link" href="#Structures-de-donn%C3%A9es-python">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -1129,14 +1140,14 @@ hello world
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Listes">Listes<a class="anchor-link" href="#Listes">&#182;</a></h3><p>La structure de données la plus utilisée en python est certainement la liste.</p>
-<p>Dans l&#39;exemple suivant, nous illustrons quelques opérations de liste très courantes :</p>
+<p>Dans l'exemple suivant, nous illustrons quelques opérations de liste très courantes :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># create the list, using square brackets</span>
@@ -1185,15 +1196,15 @@ c
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Tuples">Tuples<a class="anchor-link" href="#Tuples">&#182;</a></h3><p>Les tuples sont très similaires aux listes. La différence entre les deux est que les listes sont <strong>mutables</strong>, tandis que les tuples sont <strong>immuables</strong>. Cela signifie que nous pouvons modifier une liste (comme nous l&#39;avons fait lorsque nous avons ajouté des éléments à notre liste de données ci-dessus), mais nous ne pouvons pas modifier un tuple.</p>
-<p>Dans l&#39;exemple suivant, nous créons un tuple, l&#39;imprimons et essayons d&#39;ajouter des éléments au tuple :</p>
+<h3 id="Tuples">Tuples<a class="anchor-link" href="#Tuples">&#182;</a></h3><p>Les tuples sont très similaires aux listes. La différence entre les deux est que les listes sont <strong>mutables</strong>, tandis que les tuples sont <strong>immuables</strong>. Cela signifie que nous pouvons modifier une liste (comme nous l'avons fait lorsque nous avons ajouté des éléments à notre liste de données ci-dessus), mais nous ne pouvons pas modifier un tuple.</p>
+<p>Dans l'exemple suivant, nous créons un tuple, l'imprimons et essayons d'y ajouter des éléments :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># create a tuple, using parentheses</span>
@@ -1230,7 +1241,7 @@ c
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-29-c72b34954c76&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">&lt;ipython-input-25-c72b34954c76&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
 <span class="ansi-green-intense-fg ansi-bold">      2</span> tup <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">      3</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;length:&#39;</span><span class="ansi-blue-fg">,</span> len<span class="ansi-blue-fg">(</span>tup<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;elements:&#39;</span><span class="ansi-blue-fg">,</span> tup<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-fg">----&gt; 4</span><span class="ansi-red-fg"> </span>tup<span class="ansi-blue-fg">.</span>append<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">)</span>
@@ -1246,17 +1257,18 @@ c
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Bien sûr, cela échoue car le tuple est immuable. Cela peut sembler être un gros inconvénient des tuples. Mais ce n&#39;est pas! Nous n&#39;allons pas entrer dans un long débat sur les raisons pour lesquelles c&#39;est le cas, et ne vous donnerons qu&#39;une seule recommandation :</p>
+<p>Bien sûr, cela échoue car le tuple est immuable. Cela peut sembler être un gros inconvénient des tuples.</p>
+<p>Mais ce n'est pas le cas ! Ce serait trop long d'expliquer pourquoi, et je me contenterai de vous donner une recommandation :</p>
 <p><strong>si vous devez définir une séquence qui ne doit pas ou ne sera pas modifiée, utilisez un tuple.</strong></p>
-<p>Cela vous facilitera le débogage de votre code et le rendra plus efficace en termes de mémoire.</p>
-<p>Enfin, un mot sur l&#39;affectation des tuples. Il est possible de créer un tuple en <strong>packing</strong> les valeurs comme nous l&#39;avons fait ci-dessus. Et en fait on peut omettre les parenthèses :</p>
+<p>Cela facilitera le débogage de votre code et le rendra plus efficace en termes de mémoire.</p>
+<p>Enfin, un mot sur l'affectation des tuples. Il est possible de créer un tuple en empaquetant des valeurs comme nous l'avons fait ci-dessus. Et en fait on peut omettre les parenthèses :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">tup</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
@@ -1273,7 +1285,7 @@ c
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -1291,14 +1303,14 @@ c
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Et nous pouvons aussi <strong>décompresser</strong> :</p>
+<p>Et nous pouvons aussi déballer le tuple :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">tup</span>
@@ -1331,14 +1343,14 @@ c
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>En faisant l&#39;emballage et le déballage en même temps, nous pouvons <strong>initialiser plusieurs variables en une seule commande</strong> :</p>
+<p>En faisant l'empaquetage et le déballage en même temps, nous pouvons <strong>initialiser plusieurs variables en une seule commande</strong> :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
@@ -1371,14 +1383,15 @@ c
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Dictionnaires">Dictionnaires<a class="anchor-link" href="#Dictionnaires">&#182;</a></h3><p>Les dictionnaires sont très différents des listes et des tuples. Ce sont des structures de données <strong>mutables</strong>, <strong>mapping</strong>. Cela signifie que les dictionnaires contiennent des éléments constitués d&#39;un mappage <strong>clé</strong> à une <strong>valeur</strong>, et que nous pouvons modifier les dictionnaires existants. Voici votre premier :</p>
+<h3 id="Dictionnaires">Dictionnaires<a class="anchor-link" href="#Dictionnaires">&#182;</a></h3><p>Les dictionnaires sont très différents des listes et des tuples. Ce sont des structures de données <strong>mutables</strong> et <strong>mappables</strong>. Cela signifie que les dictionnaires contiennent des éléments constitués d'un mappage <strong>clé</strong> / <strong>valeur</strong>, et que nous pouvons modifier les dictionnaires existants.</p>
+<p>En voici un :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
@@ -1399,7 +1412,7 @@ c
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -1424,7 +1437,7 @@ c
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
@@ -1442,7 +1455,7 @@ c
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+    <div class="prompt output_prompt">Out[30]:</div>
 
 
 
@@ -1460,14 +1473,14 @@ c
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Et nous pouvons accéder à la valeur d&#39;une clé comme celle-ci :</p>
+<p>Et nous pouvons accéder à la valeur d'une clé comme ça :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]</span>
@@ -1483,7 +1496,7 @@ c
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+    <div class="prompt output_prompt">Out[31]:</div>
 
 
 
@@ -1501,14 +1514,14 @@ c
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Les programmeurs Python utilisent souvent des dictionnaires (ou des listes de dictionnaires) pour garder une trace des informations. Par exemple, pour un annuaire téléphonique :</p>
+<p>Les programmeurs Python utilisent souvent des dictionnaires (ou des listes de dictionnaires) pour garder une trace de leurs données. Par exemple, pour un annuaire téléphonique :</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">[</span>
@@ -1537,7 +1550,7 @@ c
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -1564,29 +1577,26 @@ c
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Au début, décider quel conteneur utiliser peut ne pas être facile. Gardez donc à l&#39;esprit les faits suivants :</p>
+<p>Au début, décider quel conteneur utiliser peut ne pas être facile. Gardez donc à l'esprit les faits suivants :</p>
 <p><strong>Listes:</strong></p>
 <ul>
-<li>séquentiel, signifiant que les éléments sont disposés dans un ordre donné ;</li>
-<li>peut être trié;</li>
+<li>séquentiel, signifiant que les éléments sont disposés dans un ordre donné ; </li>
+<li>peut être trié ;</li>
 <li>fournir un accès très rapide à un élément lorsque son indice est connu, avec une complexité O(1)</li>
-<li>vérifier si un élément est dans une liste est de complexité O(n), donc le temps nécessaire évolue linéairement avec le nombre d&#39;éléments dans la liste</li>
+<li>vérifier si un élément est dans une liste est de complexité O(n), donc le temps nécessaire évolue linéairement avec le nombre d'éléments dans la liste</li>
 </ul>
 <p><strong>Dictionnaires :</strong></p>
 <ul>
 <li>fournir un accès très rapide à un élément lorsque sa clé est connue, avec une complexité O(1)</li>
 <li>vérifier si une clé est dans le dictionnaire est de complexité O(1).</li>
-<li>pour python &lt; 3.6, les dictionnaires sont intrinsèquement non triés. Pour python 3.6, l&#39;ordre d&#39;insertion des éléments est conservé dans <em>certaines</em> implémentations de python. Pour python &gt;= 3.7, l&#39;ordre d&#39;insertion est toujours conservé.</li>
+<li>pour python &lt; 3.6, les dictionnaires sont intrinsèquement non triés. Pour python 3.6, l'ordre d'insertion des éléments est conservé dans <em>certaines</em> implémentations de python. Pour python &gt;= 3.7, l'ordre d'insertion est toujours conservé.</li>
 </ul>
 <hr>
-<p><em>Exercer</em></p>
+<p><strong>Exercice</strong></p>
 <p>Dans les cas suivants, utiliseriez-vous une liste, un dictionnaire, une liste de tuples ? Si vous utilisez une liste, quels éléments stockeriez-vous ? Si vous utilisez un dictionnaire, quelle clé et valeur stockeriez-vous ?</p>
 <ul>
-<li>tracer (x,y) des points de données. Dans quelle structure de données stockeriez-vous vos points avant de tracer ?</li>
-<li>un détecteur a 32 canaux, et mesure une valeur dans chaque canal lorsque la mesure est déclenchée. Quelle structure de données utiliseriez-vous pour stocker les mesures ?</li>
-<li>certains canaux sont mauvais et doivent être masqués. Où stockeriez-vous les mauvaises chaînes ?</li>
-<li>chaque valeur doit être calibrée par un facteur qui dépend du canal. Où stockeriez-vous les facteurs d&#39;étalonnage ?</li>
-<li>considérer l&#39;annuaire téléphonique ci-dessus. Quelle serait la complexité pour trouver l&#39;information pour une personne donnée ? Comment amélioreriez-vous le répertoire pour rendre la recherche très rapide ?</li>
+<li>tracer des points de données (x, y). Dans quelle structure de données stockeriez-vous vos points avant de tracer ?</li>
+<li>considérer l'annuaire téléphonique ci-dessus. Quelle serait la complexité pour trouver l'information pour une personne donnée ? Comment amélioreriez-vous le répertoire pour rendre la recherche très rapide ?</li>
 </ul>
 <hr>
 
@@ -1602,7 +1612,7 @@ c
 <p>En cas de doute, suivez le Zen of Python (<a href="https://www.python.org/dev/peps/pep-0020/">PEP20</a>) :</p>
 <ul>
 <li>Beau vaut mieux que laid.</li>
-<li>Explicite vaut mieux qu&#39;implicite.</li>
+<li>Explicite vaut mieux qu'implicite.</li>
 <li>Simple vaut mieux que complexe.</li>
 <li>Complexe vaut mieux que compliqué.</li>
 <li>Plat est mieux que imbriqué.</li>
@@ -1612,16 +1622,16 @@ c
 <li>Bien que la praticité bat la pureté.</li>
 <li>Les erreurs ne doivent jamais passer en silence.</li>
 <li>Sauf si explicitement réduit au silence.</li>
-<li>Face à l&#39;ambiguïté, refusez la tentation de deviner.</li>
+<li>Face à l'ambiguïté, refusez la tentation de deviner.</li>
 <li>Il devrait y avoir une - et de préférence une seule - manière évidente de le faire.</li>
 <li>Bien que cela ne soit pas évident au début, à moins que vous ne soyez néerlandais.</li>
 <li>Mieux vaut maintenant que jamais.</li>
 <li>Bien que jamais ne soit souvent mieux que <em>en ce moment</em>.</li>
-<li>Si la mise en œuvre est difficile à expliquer, c&#39;est une mauvaise idée.</li>
+<li>Si la mise en œuvre est difficile à expliquer, c'est une mauvaise idée.</li>
 <li>Si la mise en œuvre est facile à expliquer, cela peut être une bonne idée.</li>
 <li>Les espaces de noms sont une excellente idée - faisons-en plus !</li>
 </ul>
-<p>Et au fur et à mesure du style, suivez <a href="https://www.python.org/dev/peps/pep-0008/">PEP8!</a>.</p>
+<p>Et pour ce qui est du style du code, suivez les recommendations de <a href="https://www.python.org/dev/peps/pep-0008/">PEP8!</a>.</p>
 
 </div>
 </div>
